@@ -7,7 +7,9 @@ Authors@R: c(
  person("Shweta", "Gopaulakrishnan", role = c("cre","aut"), email = "reshg@channing.harvard.edu")
  )
 Depends: R (>= 3.4), methods, SummarizedExperiment
+Suggests: knitr
 License: Artistic-2.0
 LazyLoad: yes
 biocViews: ExperimentData, Mus_musculus_Data, Homo_sapiens_Data, ExpressionData
 RoxygenNote: 6.0.1
+VignetteBuilder: knitr
