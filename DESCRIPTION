@@ -1,7 +1,7 @@
-Package: restfulSEdata
+Package: restfulSEData
 Title: Example metadata for the "restfulSE"" R package
 Description: Metadata RangedSummarizedExperiment shell for use with restfulSE.
-Version: 0.99.1
+Version: 0.99.2
 Authors@R: c(
  person("Vincent", "Carey", role = c("aut"), email = "stvjc@channing.harvard.edu"),
  person("Shweta", "Gopaulakrishnan", role = c("cre","aut"), email = "reshg@channing.harvard.edu")
@@ -9,6 +9,5 @@ Authors@R: c(
 Depends: R (>= 3.4), methods, SummarizedExperiment
 License: Artistic-2.0
 LazyLoad: yes
-biocViews: ExperimentData, Infrastructure, SingleCell, Transcriptomics
-Additional_repositories: www.github.com/shwetagopaul92/restfulSE, www.github.com/sampoll/rhdf5client
+biocViews: ExperimentData, Mus_musculus_Data, Homo_sapiens_Data, ExpressionData
 RoxygenNote: 6.0.1

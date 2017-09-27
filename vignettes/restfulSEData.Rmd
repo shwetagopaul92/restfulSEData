@@ -1,0 +1,40 @@
+---
+title: "restfulSEData -- SummarizedExperiment shells for remote assay data"
+author: "Vincent J. Carey, stvjc at channing.harvard.edu, Shweta Gopaulakrishnan reshg at channing.harvard.edu"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{restfulSEData -- SummarizedExperiment shells for remote assay data}
+  %\VignetteEncoding{UTF-8}
+output:
+  BiocStyle::pdf_document:
+    toc: yes
+    number_sections: yes
+  BiocStyle::html_document:
+    highlight: pygments
+    number_sections: yes
+    theme: united
+    toc: yes
+---
+
+# Introduction
+
+This package includes SummarizedExperiment or RangedSummarizedExperiment
+instances from which assay data has been removed, so that it
+can be restored in real time from remote stores.
+
+```{r setup,echo=FALSE,results="hide"}
+suppressPackageStartupMessages({
+suppressWarnings({
+library(restfulSEData)
+})
+})
+```
+
+# Example
+
+```{r lk1}
+library(restfulSEData)
+data(full_1Mneurons)
+full_1Mneurons
+```
