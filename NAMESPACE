@@ -2,3 +2,5 @@
 
 export(tasicCortex)
 importFrom(utils,data)
+import(SummarizedExperiment)
+import(methods)
