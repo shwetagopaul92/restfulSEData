@@ -24,7 +24,7 @@ meta <- data.frame(
   DataProvider = c("yriMulti", "10x Genomics", "10x Genomics", "10x Genomics", "Illumina 450 methylation assay", "GTex", "GEO"), 
   Maintainer = "Bioconductor Package Maintainer <maintainer@bioconductor.org>",
   RDataClass = c(rep("RangedSummarizedExperiment", 4), "GRanges", "RangedSummarizedExperiment", "DataFrame"),
-  DispatchClass = rep("rda", 7),
+  DispatchClass = rep("Rda", 7),
   ResourceName = c(paste0("banoSEMeta.rda"),
                    paste0("st100k.rda"),
                    paste0("st400k.rda"),
