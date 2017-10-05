@@ -23,18 +23,13 @@ This package includes SummarizedExperiment or RangedSummarizedExperiment
 instances from which assay data has been removed, so that it
 can be restored in real time from remote stores.
 
-```{r setup,echo=FALSE,results="hide"}
-suppressPackageStartupMessages({
-suppressWarnings({
-library(restfulSEData)
-})
-})
-```
+The example given below elaborates on how to access the data from the standard ExperimentHub interface :  
 
-# Example
+#```{r get-data}
+#library(ExperimentHub)
+#eh = ExperimentHub()
+#myfiles <- query(eh , "restfulSEData")
+#myfiles[[1]]
+#```
 
-```{r lk1}
-library(restfulSEData)
-data(full_1Mneurons)
-full_1Mneurons
-```
+4
