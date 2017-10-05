@@ -31,7 +31,10 @@ meta <- data.frame(
                    paste0("full_1Mneurons.rda"),
                    paste0("gr450k.rda"), 
                    paste0("gtexRecount.rda"),
-                   paste0("tasicST6.rda"))
+                   paste0("tasicST6.rda")),
+  RDataPath = c("restfulSEData/banoSEMeta.rda", "restfulSEData/st100k.rda", "restfulSEData/st400k.rda", 
+                "restfulSEData/full_1Mneurons.rda","restfulSEData/gr450k.rda", 
+                "restfulSEData/gtexRecount.rda", "restfulSEData/tasicST6.rda")
   
 )
 
