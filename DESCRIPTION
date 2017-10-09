@@ -1,16 +1,18 @@
 Package: restfulSEData
 Title: Example metadata for the "restfulSE" R package
 Description: Metadata RangedSummarizedExperiment shell for use with restfulSE.
-Version: 0.99.5
+Version: 0.99.6
 Authors@R: c(
  person("Vincent", "Carey", role = c("aut"), email = "stvjc@channing.harvard.edu"),
  person("Shweta", "Gopaulakrishnan", role = c("cre","aut"), email = "reshg@channing.harvard.edu")
  )
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
-Depends: R (>= 3.4), methods, SummarizedExperiment, utils, ExperimentHub
+Depends: R (>= 3.4), SummarizedExperiment, ExperimentHub
+Imports: utils, methods
 Suggests: knitr
 License: Artistic-2.0
 LazyLoad: yes
 biocViews: ExperimentData, Mus_musculus_Data, Homo_sapiens_Data, ExpressionData, SequencingData
 RoxygenNote: 6.0.1
+Collate: dataResource.R
 VignetteBuilder: knitr

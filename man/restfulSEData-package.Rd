@@ -1,12 +1,20 @@
 \name{restfulSEData-package}
+
 \alias{restfulSEData-package}
 \alias{restfulSEData}
-\title{restfulSEData - Example metadata for the "restfulSE" R package}
+
+\title{Example metadata for the "restfulSE" R package}
+
 \description{
- This package includes SummarizedExperiment or RangedSummarizedExperiment
- instances from which assay data has been removed, so that it
- can be restored in real time from remote stores.
+  Metadata RangedSummarizedExperiment shell for use with "restfulSE" R package 
+  is available in \code{ExperimentHub}
 }
 
 
-
+\examples{
+  library(ExperimentHub)
+  ehub <- ExperimentHub()
+  myfiles <- query(ehub, "restfulSEData")
+  myfiles[[1]] #load the first resource in the list
+  myfiles[["EH551"]] #load by EH id
+}

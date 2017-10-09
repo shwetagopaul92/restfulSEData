@@ -23,13 +23,32 @@ This package includes SummarizedExperiment or RangedSummarizedExperiment
 instances from which assay data has been removed, so that it
 can be restored in real time from remote stores.
 
-The example given below elaborates on how to access the data from the standard ExperimentHub interface :  
+- The example given below elaborates on how to access the data from the standard ExperimentHub interface :  
 
-#```{r get-data}
-#library(ExperimentHub)
-#eh = ExperimentHub()
-#myfiles <- query(eh , "restfulSEData")
-#myfiles[[1]]
-#```
+```{r get-data}
+library(ExperimentHub)
+ehub = ExperimentHub()
+myfiles <- query(ehub , "restfulSEData")
+myfiles
+myfiles[[1]]
+myfiles[["EH551"]] #load by EH id
 
-4
+```
+
+- To get a flavor of the datasets present : 
+
+```{r meta}
+dataResource()
+```
+
+- To use the data with "restfulSE" R package :
+We grab the ExperimentHub ID of the dataset we are interested in. 
+
+```{use data}
+
+myfiles[["EH551"]] -> banoSEMeta
+banoSEMeta
+```
+
+
+
