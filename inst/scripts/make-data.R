@@ -46,7 +46,7 @@ st400k@assays = Assays(SimpleList()) # to retrieve the metatdata alone
 save(st1400k, file="st400k.rda")
 
 # full_1Mneurons full 1.3 million cell dataset from 10x genomics 
-## Following the same procedure as above, to subset 400k cells, add rowRanges, no sorting, retreive metadata alone.
+## Following the same procedure as above, to subset 400k cells, no sorting, retreive metadata alone. 
 full_1Mneurons = as.matrixSummarizedExperiment(tx[1:27998,1:1306127])
 save(full_1Mneurons, file="full_1Mneurons.rda")
 

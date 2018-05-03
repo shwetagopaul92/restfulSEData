@@ -6,7 +6,6 @@
 \usage{
 dataResource()
 }
-\value{data object to provide desctiption of datasets}
 \description{
 Convenience functions to explore the datasets
 }
